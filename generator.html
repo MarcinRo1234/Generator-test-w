@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator testów</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="test-generator">
+        <div class="test-generator__option">
+            <h1>Generator testów automatycznych</h1>
+            <label for="category">Wybierz komponent</label>
+            <select name="" id="category" onchange="selectValue()">
+                <option value="0" disabled selected>Wybierz komponent</option>
+                <option value="1">Banner_2023-lista</option>
+                <option value="2">Banner_2023-paragraf</option>
+                <option value="3">Article_2023-lista</option>
+            </select>
+            <input type="text" class="idInput" placeholder="Podaj nr id komponentu">
+            <button class="submit-test">Generuj</button>
+            <p class="error-info">Wypełnij wszystkie pola</p>
+        </div>
+        <div class="test-generator__result">
+            <textarea name="" id="area-result"></textarea>
+        </div>
+    </div>
+</div>
+<script type="module" src="testGenerator.js"></script>
+</body>
+</html>
